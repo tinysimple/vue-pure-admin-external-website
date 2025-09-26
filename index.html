@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Admin</title>
+</head>
+  </meta>
+  </meta>
+</head>
+<body>
+  <div id="app">同源网站（注册了beforeunload事件）</div>
+</body>
+<script>
+  window.addEventListener('beforeunload', function(event) {
+    // 取消事件的默认行为
+    event.preventDefault();
+    // 显示确认对话框
+    event.returnValue = '您确定要离开吗？所有未保存的更改将会丢失。';
+});
+</script>
+</html>
