@@ -9,6 +9,11 @@
   </meta>
   </meta>
 </head>
+<script>
+  // 模拟5秒的加载过程
+  const now = Date.now();
+  while(Date.now() - now < 5000) {}
+</script>
 <body>
   <div id="app">同源网站（注册了beforeunload事件）</div>
 </body>
